@@ -35,7 +35,7 @@ fun movieEvaluation(){
                     fontSize = 14.sp,
                 )
             }
-            Spacer(modifier = Modifier.height(8.dp))
+            Spacer(modifier = Modifier.height(4.dp))
             Text(
                 text = "IMDb",
                 color = Black_37,
@@ -51,7 +51,7 @@ fun movieEvaluation(){
                     fontSize = 14.sp,
                 )
             }
-            Spacer(modifier = Modifier.height(8.dp))
+            Spacer(modifier = Modifier.height(4.dp))
             Text(
                 text = "Rotten Tomatoes",
                 color = Black_37,
@@ -72,7 +72,7 @@ fun movieEvaluation(){
                     fontSize = 14.sp,
                 )
             }
-            Spacer(modifier = Modifier.height(8.dp))
+            Spacer(modifier = Modifier.height(4.dp))
             Text(
                 text = "IGN",
                 color = Black_37,

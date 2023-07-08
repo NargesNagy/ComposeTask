@@ -25,7 +25,8 @@ fun MovieDescription(
             text = movieName,
             color = Black_87,
             fontSize = 20.sp,
-            modifier = Modifier.padding(horizontal = 64.dp)
+            modifier = Modifier.padding(horizontal = 64.dp),
+            maxLines = 2
         )
         Spacer(modifier = Modifier.height(16.dp))
         customChips(description)

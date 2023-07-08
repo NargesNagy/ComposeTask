@@ -18,6 +18,7 @@ import com.example.composetask.R
 import com.example.composetask.composable.CustomButtonWithIcon
 import com.example.composetask.composable.MovieDescription
 import com.example.composetask.screens.details.composable.Characters
+import com.example.composetask.screens.details.composable.DetailsImage
 import com.example.composetask.screens.details.composable.movieDescriptiontext
 import com.example.composetask.screens.details.composable.movieEvaluation
 import com.example.composetask.screens.home.HomeScreen
@@ -42,6 +43,7 @@ fun DetailsScreen() {
     )
     Column() {
 
+        /*
         Image(
             painter = painterResource(id = R.drawable.image5), contentDescription = "image",
             contentScale = ContentScale.Crop,
@@ -50,7 +52,9 @@ fun DetailsScreen() {
                 .height(360.dp)
                 .fillMaxWidth()
         )
+        */
 
+        DetailsImage()
 
         Column(
             horizontalAlignment = Alignment.CenterHorizontally,
@@ -59,7 +63,7 @@ fun DetailsScreen() {
                 .clip(shape = RoundedCornerShape(topStart = 32.dp, topEnd = 32.dp))
                 .background(color = White_FF)
         ) {
-            Spacer(modifier = Modifier.height(32.dp))
+            Spacer(modifier = Modifier.height(24.dp))
             movieEvaluation()
             Spacer(modifier = Modifier.height(16.dp))
             MovieDescription("hgjhgjgjhgjgjhgj", listOf("fantasy", "adven"))
