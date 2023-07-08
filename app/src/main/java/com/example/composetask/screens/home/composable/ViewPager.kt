@@ -67,7 +67,6 @@ fun pager(movies: List<Int>) {
                 contentDescription = "profile picture",
                 modifier = Modifier.clip(RoundedCornerShape(16.dp))
                     .height(360.dp)
-
             )
 
         }

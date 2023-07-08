@@ -1,6 +1,5 @@
 package com.example.composetask.screens.home.composable
 
-import androidx.compose.foundation.BorderStroke
 import androidx.compose.foundation.layout.*
 import com.example.composetask.R
 import androidx.compose.material.*
@@ -12,11 +11,10 @@ import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
+import com.example.composetask.composable.MovieDescription
 import com.example.composetask.composable.customChips
-import com.example.composetask.ui.theme.Black_8
 import com.example.composetask.ui.theme.Black_87
 import com.google.accompanist.pager.ExperimentalPagerApi
-import org.intellij.lang.annotations.JdkConstants.HorizontalAlignment
 
 @OptIn(ExperimentalMaterialApi::class)
 @Composable
@@ -44,10 +42,7 @@ fun movieDetails(
             Text(text = hours, color = Color.Gray, fontSize = 14.sp)
         }
 
-        Spacer(modifier = Modifier.height(16.dp))
-        Text(text = movieName, color = Black_87, fontSize = 20.sp, modifier = Modifier.padding(horizontal = 64.dp))
-        Spacer(modifier = Modifier.height(16.dp))
-        customChips(description)
+        MovieDescription(movieName, description)
 
 
     }
