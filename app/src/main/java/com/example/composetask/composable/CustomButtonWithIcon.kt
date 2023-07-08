@@ -18,30 +18,29 @@ import com.google.accompanist.pager.ExperimentalPagerApi
 
 @Composable
 fun CustomButtonWithIcon(icon: Int, text: String) {
-Row() {
-    
+    Row() {
 
-    Button(
-        onClick = { }, Modifier
-            .padding(horizontal = 16.dp, vertical = 16.dp),
-        shape = RoundedCornerShape(32.dp),
-        border = null,
-        colors = ButtonDefaults.buttonColors(backgroundColor = Red, contentColor = Color.White)
+        Button(
+            onClick = { }, Modifier
+                .padding(horizontal = 16.dp, vertical = 16.dp),
+            shape = RoundedCornerShape(32.dp),
+            border = null,
+            colors = ButtonDefaults.buttonColors(backgroundColor = Red, contentColor = Color.White)
 
-    ) {
-        Row() {
-            Icon(
-                painter = painterResource(id = icon),
-                contentDescription = null,
-                modifier = Modifier
-                    .size(24.dp)
-                    .padding(top = 4.dp),
-            )
-            Spacer(modifier = Modifier.width(8.dp))
-            Text(text = text, color = White_FF, fontSize = 16.sp)
+        ) {
+            Row() {
+                Icon(
+                    painter = painterResource(id = icon),
+                    contentDescription = null,
+                    modifier = Modifier
+                        .size(24.dp)
+                        .padding(top = 4.dp),
+                )
+                Spacer(modifier = Modifier.width(8.dp))
+                Text(text = text, color = White_FF, fontSize = 16.sp)
+            }
         }
     }
-}
 }
 
 @OptIn(ExperimentalPagerApi::class)
