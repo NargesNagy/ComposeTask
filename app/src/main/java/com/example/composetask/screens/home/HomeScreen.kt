@@ -14,6 +14,7 @@ import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import com.example.composetask.R
+import com.example.composetask.screens.details.composable.Characters
 import com.example.composetask.screens.home.composable.CustomButtons
 import com.example.composetask.screens.home.composable.HomeBackGround
 import com.example.composetask.screens.home.composable.movieDetails
@@ -40,7 +41,6 @@ fun HomeScreen() {
         pager(movies)
         Spacer(modifier = Modifier.height(24.dp))
         movieDetails("1h 33m", "hgjhgjgjhgjgjhgj", listOf("fantasy", "adven"))
-
     }
 
 }
